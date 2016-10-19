@@ -15,7 +15,9 @@ var gulp           = require('gulp'),
 		gulpRemoveHtml = require('gulp-remove-html'),
 		bourbon        = require('node-bourbon'),
 		ftp            = require('vinyl-ftp'),
-		notify         = require("gulp-notify");
+		notify         = require("gulp-notify"),
+    spritesmith    = require('gulp.spritesmith');
+
 
 gulp.task('browser-sync', function() {
 	browserSync({
@@ -75,7 +77,7 @@ gulp.task('imagemin', function() {
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
 		})))
-		.pipe(gulp.dest('dist/img')); 
+		.pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('buildhtml', function() {
@@ -128,3 +130,11 @@ gulp.task('deploy', function() {
 gulp.task('clearcache', function () { return cache.clearAll(); });
 
 gulp.task('default', ['watch']);
+
+gulp.task('sprite', function () {
+  var spriteData = gulp.src('sprites/*.png').pipe(spritesmith({
+    imgName: 'sprite.png',
+    cssName: 'sprite.scss'
+  }));
+  return spriteData.pipe(gulp.dest('sprites/'));
+});
