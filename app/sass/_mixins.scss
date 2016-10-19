@@ -1,0 +1,35 @@
+@import "vars";
+
+@mixin clearfix(){
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin container(){
+  width: 320px;
+  margin: 0 auto;
+  @media (min-width: $tablet-widths) {
+    width: 640px;
+  }
+  @media (min-width: $desktop-widths){
+    width: 960px;
+  }
+}
+
+@mixin margin-padding-null{
+  margin: 0;
+  padding: 0;
+}
+
+@mixin container-fluid {
+  width: auto;
+
+  @media (min-width: $tablet-widths) {
+    width: 84%;
+    max-width: 960px;
+    margin:  0 auto;
+  }
+}

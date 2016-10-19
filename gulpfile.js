@@ -27,7 +27,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('sass', ['headersass'], function() {
-	return gulp.src('app/sass/**/*.sass')
+	return gulp.src('app/sass/**/*.scss')
 		.pipe(sass({
 			includePaths: bourbon.includePaths
 		}).on("error", notify.onError()))
@@ -39,7 +39,7 @@ gulp.task('sass', ['headersass'], function() {
 });
 
 gulp.task('headersass', function() {
-	return gulp.src('app/header.sass')
+	return gulp.src('app/header.scss')
 		.pipe(sass({
 			includePaths: bourbon.includePaths
 		}).on("error", notify.onError()))
@@ -61,8 +61,8 @@ gulp.task('libs', function() {
 });
 
 gulp.task('watch', ['sass', 'libs', 'browser-sync'], function() {
-	gulp.watch('app/header.sass', ['headersass']);
-	gulp.watch('app/sass/**/*.sass', ['sass']);
+	gulp.watch('app/header.scss', ['headersass']);
+	gulp.watch('app/sass/**/*.scss', ['sass']);
 	gulp.watch('app/*.html', browserSync.reload);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
 });

@@ -1,0 +1,25 @@
+.page-header {
+
+}
+
+.page-header__wrapper {
+  position: relative;
+  @include container-fluid;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  //outline: 1px solid red;
+}
+
+.page-header__logo {
+
+  margin: auto;
+  text-align: center;
+  padding: 19px 0 18px 0;
+}
+
+.page-header__logo img {
+  @include margin-padding-null;
+
+}
