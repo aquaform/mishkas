@@ -63,12 +63,12 @@
 	<!-- Custom HTML -->
 	<header class="page-header">
 		<div class="page-header__wrapper">
-			<div class="page-header__logo  page-header__logo--mobile">
-				<img src="img\mishka-logo-mobile.png" alt="Магазин Мишка">
-			</div>
-			<nav class="main-nav main-nav--closed main-nav--nojs">
-				<button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
 				<div class="main-nav__wrapper">
+          <div class="page-header__logo  page-header__logo--mobile">
+            <img src="img\mishka-logo-mobile.png" alt="Магазин Мишка">
+          </div>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
 					<ul class="main-nav__items">
 						<li class="main-nav__item"><a href="#">Каталог товаров</a></li>
 						<li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
@@ -79,23 +79,28 @@
 					<ul class="main-nav__user-items">
 						<li class="main-nav__user-item"><a href="#">Корзина: пока пуста</a></li>
 					</ul>
+          <ul class="main-nav__offer-items">
+            <li class="main-nav__offer-item">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li>
+              <a href="#">Распродажа</a>
+            </li>
+          </ul>
+          <b class="main-nav__offer">Бесплатная доставка по России</b>
 				</div>
 			</nav>
-		</div>
-	</header>
+      <div class="title-box">
+            <h1 class="title-box__title">Милые штучки ручной работы для дома</h1>
+            <ul class="title-box__category-list">
+              <li class="title-box__category-item"><a href="#">Предметы интерьера</a></li>
+              <li class="title-box__category-item"><a href="#">Детские игрушки</a></li>
+            </ul>
+      </div>
+    </div>
+  </header>
 
 	<!--
-
-	<section class="products">
-		<div class="products__wrapper">
-			<h1 class="page-title">Милые штучки ручной работы для дома</h1>
-			<ul class="products__items">
-				<li class="products__item"><a href="#">Предметы интерьера</a></li>
-				<li class="products__item"><a href="#">Детские игрушки</a></li>
-			</ul>
-		</div>
-	</section>
-
 	<section class="week-offer">
 		<div class="week-offer__wrapper">
 			<h2 class="week-offer__title">Товар недели</h2>

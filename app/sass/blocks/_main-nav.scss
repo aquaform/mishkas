@@ -94,7 +94,7 @@
 
 .main-nav__item a{
   display: block;
-  padding: 25px 15px 27px 110px;
+  padding: 25px 15px 27px 77px;
 
   color: black;
   text-decoration: none;
@@ -117,7 +117,7 @@
 .main-nav__search a{
   display: block;
   position: relative;
-  padding: 25px 15px 27px 110px;
+  padding: 25px 15px 27px 77px;
 
   color: black;
   text-decoration: none;
@@ -135,7 +135,7 @@
     position: absolute;
     @include sprite($search);
     top: 30px;
-    left: 65px;
+    left: 35px;
   }
 
   &:hover {
@@ -163,7 +163,7 @@
 .main-nav__user-item a{
   position: relative;
   display: block;
-  padding: 25px 15px 27px 110px;
+  padding: 25px 15px 27px 77px;
 
   color: black;
   text-decoration: none;
@@ -181,7 +181,7 @@
     position: absolute;
     @include sprite($cart);
     top: 30px;
-    left: 65px;
+    left: 35px;
   }
 
   &:hover {
@@ -199,7 +199,167 @@
     opacity: 1;
     @include sprite($cart-active);
   }
+}
+
+.main-nav__offer {
+  display: none;
+}
+
+.main-nav__offer-items {
+  display: none;
+}
+
+@media (max-width: $max-mobile-width) {
+  .main-nav--closed .main-nav__items {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__user-items {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__search {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__items {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__search {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__user-items {
+    display: block;
+  }
+}
+
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+
+@media (min-width:$tablet-widths){
+    .main-nav {
+
+    }
+
+    .main-nav__toggle {
+      display: none;
+    }
+
+    .main-nav__wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .main-nav__items {
+      flex-direction: row;
+      order: 10;
+
+      font-size: 14px;
+    }
+
+    .main-nav__items a{
+      box-shadow: none;
+      padding: 25px 10px;
+    }
+
+    .main-nav__search a{
+      font-size: 0;
+      box-shadow: none;
+      border-bottom: 1px solid #eaeaea;
+      border-left: 1px solid #eaeaea;
+    }
+
+    .main-nav__user-items a{
+      box-shadow: none;
+      border-bottom: 1px solid #eaeaea;
+      border-left: 1px solid #eaeaea;
+    }
+
+
+
+    .main-nav__offer {
+      display: block;
+      font-family: "Open Sans";
+      color: #444;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+      order: 20;
+      padding: 25px 15px 25px 15px;
+    }
 
 }
 
 
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+
+
+@media (min-width:$desktop-widths){
+  .main-nav__wrapper {
+    justify-content: space-between;
+  }
+
+  .main-nav__items {
+    order: -10;
+  }
+
+  .main-nav__items a {
+    border-bottom: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+  }
+
+  .main-nav__offer-items {
+    @include margin-padding-null;
+    list-style: none;
+    display: flex;
+  }
+
+  .main-nav__offer-items a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+
+    padding: 25px 15px 25px 15px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+  }
+
+
+
+
+
+
+}
