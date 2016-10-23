@@ -1,0 +1,31 @@
+.week-product__wrapper {
+  @include container-fluid;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.week-product__name{
+  order: -10;
+  width: 255px;
+  height: 23px;
+  color: black;
+  font-family: Verdana;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.week-product__title {
+
+  width: 125px;
+  height: 15px;
+  color: #63d1bb;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+

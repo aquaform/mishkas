@@ -8,160 +8,175 @@
   background-position: center -50px;
   background-size: cover;
 
-
-
-}
-
-.title-box__title {
-  margin-top: 135px;
-  font-size: 24px;
-  width: 50%;
-  text-align: center;
-  align-self: center;
-}
-
-.title-box__category-list {
-  @include margin-padding-null;
-  display: flex;
-  flex-direction: column;
-
-  margin-top: auto;
-
-  list-style: none;
-  align-items: stretch;
-
-}
-
-.title-box__category-item {
-  display: flex;
-
-}
-
-.title-box__category-item a {
-  position: relative;
-  flex-grow: 1;
-
-  color: white;
-  font-family: Verdana;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  text-decoration: none;
-
-  padding-top: 25px;
-  padding-bottom: 25px;
-  paddind-right: 70px;
-  padding-left: 30px;
-}
-
-
-.title-box__category-item:nth-child(1) a {
-  background-color: #63d1bb;
-
-  &::before {
-    position: absolute;
-    top: 20px;
-    right: 33px;
-
-    content: "";
-    display: block;
-    height: 60px;
-    width: 40px;
-    background: url("../img/interior.png") ;
-  }
-
-  &:hover{
-    background-color: #59d5bc;
-  }
-
-  &:active {
-    background-color: #59d5bc;
-    color: #8be1d0;
-
-  }
-
-  &:hover::before {
-    background: url("../img/interior-hover.png") ;
-  }
-
-
-  &:active {
-    background-color: #46c1ae;
-    color:#7ddeca;
-  }
-
-  &:active::before {
-    background: url("../img/interior-active.png") ;
-  }
-
-}
-
-.title-box__category-item:nth-child(2) a {
-
-  background-color: #56c3b2;
-
-  &::before {
-    position: absolute;
-    top: 20px;
-    right: 27px;
-
-    content: "";
-    display: block;
-    height: 60px;
-    width: 60px;
-    background: url("../img/toy.png") ;
-  }
-
-  &:hover {
-    background-color: #46c1ae;
-  }
-
-  &:hover::before {
-    background: url("../img/toy-hover.png") ;
-  }
-
-
-  &:active {
-    background-color: #46c1ae;
-    color:#7dd3c6 ;
-  }
-
-  &:active::before {
-    background: url("../img/toy-active.png") ;
-  }
-}
-
-//---------------------------------------------------------
-//---------------------------------------------------------
-//---------------------------------------------------------
-//---------------------------------------------------------
-//---------------------------------------------------------
-//---------------------------------------------------------
-//---------------------------------------------------------
-//---------------------------------------------------------
-
-
-@media (min-width:$tablet-widths){
-  .title-box {
-    background-position: center -100px;
-
-  }
-
   .title-box__title {
-    font-size: 40px;
-    width: 70%;
+    margin-top: 135px;
+    font-size: 24px;
+    width: 50%;
+    text-align: center;
+    align-self: center;
   }
 
   .title-box__category-list {
-    flex-direction: row;
+    @include margin-padding-null;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: auto;
+
+    list-style: none;
+    align-items: stretch;
   }
 
   .title-box__category-item {
-    width: 50%;
+    display: flex;
+
   }
 
-  .title-box__category-item a{
-   // border-image: url("../img/zigzag-border.png");
+  .title-box__category-item a {
+    position: relative;
+    flex-grow: 1;
+
+    color: white;
+    font-family: Verdana;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    paddind-right: 70px;
+    padding-left: 30px;
+  }
+
+  .title-box__category-item:nth-child(1) a {
+    background-color: #63d1bb;
+
+    &::before {
+      position: absolute;
+      top: 20px;
+      right: 33px;
+
+      content: "";
+      display: block;
+      height: 60px;
+      width: 40px;
+      background: url("../img/interior.png");
+    }
+
+    &:hover {
+      background-color: #59d5bc;
+    }
+
+    &:active {
+      background-color: #59d5bc;
+      color: #8be1d0;
+
+    }
+
+    &:hover::before {
+      background: url("../img/interior-hover.png");
+    }
+
+    &:active {
+      background-color: #46c1ae;
+      color: #7ddeca;
+    }
+
+    &:active::before {
+      background: url("../img/interior-active.png");
+    }
+
+  }
+
+  .title-box__category-item:nth-child(2) a {
+
+    background-color: #56c3b2;
+
+    &::before {
+      position: absolute;
+      top: 20px;
+      right: 27px;
+
+      content: "";
+      display: block;
+      height: 60px;
+      width: 60px;
+      background: url("../img/toy.png");
+    }
+
+    &:hover {
+      background-color: #46c1ae;
+    }
+
+    &:hover::before {
+      background: url("../img/toy-hover.png");
+    }
+
+    &:active {
+      background-color: #46c1ae;
+      color: #7dd3c6;
+    }
+
+    &:active::before {
+      background: url("../img/toy-active.png");
+    }
+  }
+
+  //---------------------------------------------------------
+  //---------------------------------------------------------
+  //---------------------------------------------------------
+  //---------------------------------------------------------
+  //---------------------------------------------------------
+  //---------------------------------------------------------
+  //---------------------------------------------------------
+  //---------------------------------------------------------
+
+  @media (min-width: $tablet-widths) {
+    .title-box {
+      background-position: center -100px;
+
+    }
+
+    .title-box__title {
+      font-size: 40px;
+      width: 70%;
+    }
+
+    .title-box__category-list {
+      flex-direction: row;
+
+    }
+
+    .title-box__category-item {
+      width: 50%;
+      align-self: flex-end;
+
+    }
+
+    .title-box__category-item a {
+      padding-bottom: 50px;
+      &:hover {
+        padding-bottom: 65px;
+      }
+    }
+
+
+
+    .title-box__category-item:nth-child(1) a {
+      background: url("../img/zigzag-border.png") #46c1ae;
+      background-repeat: repeat-x;
+      background-position: right bottom;
+
+    }
+
+    .title-box__category-item:nth-child(2) a {
+
+      background: url("../img/zigzag-border.png") #56c3b2;
+      background-repeat: repeat-x;
+      background-position: left bottom;
+
+    }
   }
 }
 

@@ -359,6 +359,10 @@
     background-color: white;
   }
 
+  .main-nav__item:last-child a{
+    border-right: none;
+  }
+
   .main-nav__offer-items {
     @include margin-padding-null;
     list-style: none;
@@ -385,10 +389,4 @@
       opacity: 0.3;
     }
   }
-
-
-
-
-
-
 }
