@@ -1,5 +1,6 @@
 @import "bourbon";
 @import "vars";
+@import "mixins";
 
 
 *::-webkit-input-placeholder {
@@ -54,7 +55,7 @@ body {
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
-  padding: 20px;
+  padding: 20px 80px;
   text-align: center;
 
   &:hover {
