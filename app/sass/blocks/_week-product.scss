@@ -11,9 +11,10 @@
   padding-top: 30px;
   padding-bottom: 40px;
 
-  background-image: url("../img/zigzag-line-mobile.png");
+  background-image: url("../img/zigzag-line.png");
   background-repeat: repeat-x;
   background-position: left bottom;
+  background-size: 25px;
 
 
 }
@@ -112,7 +113,7 @@
   .week-product__wrapper {
     position: relative;
     flex-direction: column;
-    background-size: 100%;
+    background-size: 50px;
     padding-bottom: 70px;
   }
 
