@@ -1,0 +1,64 @@
+.reviews__wrapper {
+  @include container-fluid;
+  padding: 20px 30px;
+
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.reviews__title {
+  @include margin-padding-null;
+
+  color: black;
+  font-family: Verdana;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.reviews__items {
+  margin-top: 27px;
+
+}
+
+
+.reviews__item {
+  @include margin-padding-null;
+}
+
+.reviews__item p {
+  color: #444;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.reviews__author-name {
+  color: black;
+  font-family: Verdana;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.reviews__nickname {
+  color: #444;
+  font-family: OpenSans;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.reviews__prev, .reviews__next {
+
+  height: 50px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 3px;
+}
+
+.reviews__write {
+
+}
+
