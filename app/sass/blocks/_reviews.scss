@@ -1,3 +1,7 @@
+.reviews {
+
+}
+
 .reviews__wrapper {
   @include container-fluid;
   padding: 20px 30px 55px;
@@ -192,6 +196,8 @@
     padding-top: 70px;
     padding-left: 215px;
     width: 75%;
+
+    background-size: 75px;
   }
 
   .reviews__title {
@@ -206,6 +212,10 @@
 
   .reviews__item p {
     width: 80%;
+  }
+
+  .reviews__nav-block {
+    bottom: 80px;
   }
 
 }
