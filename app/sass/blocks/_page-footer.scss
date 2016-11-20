@@ -1,0 +1,91 @@
+.page-footer {
+  @include margin-padding-null;
+  background-color: #f1f1f1;
+  padding: 25px 0;
+
+}
+
+.page-footer__copyright {
+  @include margin-padding-null;
+
+}
+
+.page-footer__social {
+
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-link {
+
+  font-size: 0;
+  width: 22px;
+  height: 22px;
+
+}
+
+.social-link--insta {
+  @include sprite($insta);
+  &:hover{
+    @include sprite($insta-hover);
+  }
+  &:active {
+    @include sprite($insta-active);
+  }
+
+}
+
+.social-link--fb {
+  @include sprite($fb);
+  &:hover{
+    @include sprite($fb-hover);
+  }
+  &:active {
+    @include sprite($fb-active);
+  }
+}
+
+.social-link--twitter {
+  @include sprite($twitter);
+  &:hover{
+    @include sprite($twitter-hover);
+  }
+  &:active {
+    @include sprite($twitter-active);
+  }
+
+
+}
+
+.page-footer__copyright {
+  color: black;
+  font-family: Verdana;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__copyright-link {
+  margin-left: 25px;
+  font-size: 0;
+  width: 34px;
+  height: 3px;
+  @include sprite($htmlacademy);
+  &:hover{
+    @include sprite($htmlacademy-hover);
+  }
+  &:active {
+    @include sprite($htmlacademy-active);
+  }
+
+}
