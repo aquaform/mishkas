@@ -1,0 +1,8 @@
+.page-footer {
+  @include margin-padding-null;
+  background-color: #f1f1f1;
+}
+
+.page-footer__copyright {
+  @include margin-padding-null;
+}
