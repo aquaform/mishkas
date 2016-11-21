@@ -1,5 +1,6 @@
 .about__wrapper {
   @include container-fluid;
+  padding: 0 30px;
 }
 
 .about__title {
@@ -8,14 +9,13 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
-  margin-left: 30px;
+
   margin-bottom: 33px;
 }
 
 .about__items {
   @include margin-padding-null;
   list-style: none;
-  margin-left: 30px;
 }
 
 .about__item {
@@ -88,13 +88,19 @@
   }
 
   .about__wrapper {
-    padding-left: 185px;
+    //padding-left: 185px;
   }
 
   .about__title {
+    margin-left: 195px;
+
     font-size: 50px;
     font-weight: 700;
     line-height: 57px;
+  }
+
+  .about__items {
+    margin-left: 195px;
   }
 
   .about__item-name {

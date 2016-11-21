@@ -5,19 +5,20 @@
   background-size: 25px;
 
   padding-top: 50px;
+
+
 }
 
 .contacts__wrapper {
   @include container-fluid;
 
-  padding: 0 0;
+  padding: 0 30px;
 
 }
 
 .contacts__title {
   @include margin-padding-null;
 
-  margin: 0 30px;
   color: black;
   font-family: Verdana;
   font-size: 24px;
@@ -25,7 +26,10 @@
   line-height: 30px;
 }
 
+
+
 .contacts__list {
+  @include margin-padding-null;
   width: 100%;
 
   color: #444;
@@ -33,9 +37,9 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
-
-  margin: 25px 30px 0 30px;
 }
+
+
 
 .contacts__field, .contacts__value {
   padding-bottom: 25px;
@@ -52,6 +56,7 @@
 }
 
 .contacts__map {
+  @include margin-padding-null;
   width: 100%;
   height: 457px;
   background-image: url("../img/map-mobile.jpg");
@@ -78,9 +83,60 @@
 @media (min-width: $tablet-widths) {
   .contacts {
     background-size: 50px;
+    padding-top: 80px;
+  }
+
+  .contacts__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      content: "";
+      right: block;
+
+      position: absolute;
+
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/flag.png");
+      top: 0;
+      right: 60px;
+    }
+  }
+
+  .contacts__title {
+    color: black;
+    font-family: Verdana;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+
+  .contacts__list {
+    margin-top: 55px;
+    margin-bottom: 35px;
   }
 
 
+  .contacts__list tbody {
+    display: flex;
+
+    justify-content: space-between;
+  }
+
+  .contacts__list tr {
+    display: flex;
+
+    width: 50%;
+  }
+
+  .contacts__write-us {
+    align-self: center;
+
+     margin: 55px 0;
+
+  }
 }
 
 /////////////////////////////////////////////////////
@@ -97,4 +153,55 @@
     background-size: 75px;
   }
 
+  .contacts__wrapper {
+  padding-bottom: 50px;
+    &::before {
+
+      top: 80px;
+      right: 990px;
+    }
+  }
+
+  .contacts__title {
+    margin-left: 195px;
+    margin-top: 90px;
+
+    color: black;
+    font-family: Verdana;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57px;
+  }
+
+  .contacts__list {
+    margin-left: 195px;
+
+    width: 30%;
+  }
+
+  .contacts__list tr {
+    width: 100%;
+  }
+
+
+  .contacts__list tbody {
+    flex-direction: column;
+  }
+
+
+  .contacts__map {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+
+    width: 545px;
+    height: 457px;
+  }
+
+  .contacts__write-us {
+
+    align-self: flex-start;
+    margin-left: 240px;
+    margin-top: 15px ;
+  }
 }

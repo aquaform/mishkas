@@ -121,7 +121,7 @@
   .reviews__wrapper {
     background-size: 50px;
     padding-top: 75px;
-    padding-bottom: 33px;
+    padding-bottom: 75px;
 
     flex-direction: row;
     flex-wrap: wrap;
@@ -179,8 +179,9 @@
 @media (min-width: $desktop-widths) {
   .reviews__wrapper {
     padding-top: 70px;
-    padding-left: 215px;
+    padding-left: 200px;
     width: 75%;
+    padding-bottom: 60px;
 
     background-size: 75px;
   }
